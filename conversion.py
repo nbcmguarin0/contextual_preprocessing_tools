@@ -34,7 +34,7 @@ def parse_doc_images(doc_img_file_path, desired_ext):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dir", type=str)
+    parser.add_argument("dir", type=str)
     args = parser.parse_args()
 
     for src_file_path in os.listdir(args.dir):
